@@ -1,0 +1,11 @@
+function NthWord(string, int) {  
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var str = string; //gives out the string
+  var wordArray = str.split(" "); //Split by space
+  var NthWord = wordArray.length; //helps select any value from the Array
+  return wordArray[int]; 
+  //wordArray[0]; gives us first word
+  //wordArray[1]; gives us second word
+  //wordArray[2]; gives us third word
+  //gets the number word. With the array pattern it would start from 0 so to get the first word it would be =NthWord(cell,0). Second word would be =NthWord(cell,1)
+}
